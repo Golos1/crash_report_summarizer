@@ -115,6 +115,7 @@ def summarize_report(
         client = OpenAI()
 
     response = client.responses.create(
+        temperature=0.3,
         model=model,
         prompt_cache_key="crash_report_prompts",
         instructions=INSTRUCTIONS,
