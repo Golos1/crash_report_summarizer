@@ -1,0 +1,11 @@
+2026-09-17 10:32:41 ERROR Application crashed
+
+Exception in thread "main" java.lang.NullPointerException:
+Cannot invoke "User.getName()" because "user" is null
+
+    at com.example.UserService.getUserName(UserService.java:42)
+    at com.example.Controller.handleRequest(Controller.java:87)
+    at com.example.Main.main(Main.java:15)
+
+Build: 2.4.17
+Environment: production

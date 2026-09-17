@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "app.py", line 150, in process_request
+    result = users[user_id]["name"]
+KeyError: '48291'
+
+Request ID: 993810
+Service: account-api
+Version: 4.18.2
