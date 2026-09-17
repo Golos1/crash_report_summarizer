@@ -1,0 +1,16 @@
+Application crashed unexpectedly.
+
+User: john.doe
+Home: C:\Users\john.doe\Documents\crash_reports
+Email: john.doe@example.com
+
+API_KEY=sk-test-1234567890
+TOKEN=abc123456789
+PASSWORD=supersecret
+Authorization: Bearer abcdef123456
+
+IP: 192.168.1.100
+Path: C:\Users\john.doe\AppData\Local\MyApp\logs\crash.log
+
+Exception:
+NullReferenceException at MyApp.Program.Main()
