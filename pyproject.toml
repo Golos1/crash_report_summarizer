@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crash-summarizer"
+version = "0.1.0"
+description = "Summarize software crash reports with the OpenAI Responses API."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "openai>=1.66.0,<3",
+]
+
+[project.scripts]
+crash-summarizer = "crash_summarizer.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crash_summarizer"]
+
