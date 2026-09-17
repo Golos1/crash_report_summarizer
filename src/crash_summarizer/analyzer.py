@@ -116,6 +116,10 @@ def summarize_report(
 
     response = client.responses.create(
         model=model,
+        prompt_cache_options={
+            "ttl": "60m"
+        },
+        prompt_cache_key="crash_report_prompts",
         instructions=INSTRUCTIONS,
         input=[
             {
